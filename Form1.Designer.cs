@@ -31,7 +31,9 @@ namespace Photo_Cropper
         {
             this.btnUploadPhoto = new System.Windows.Forms.Button();
             this.image1 = new System.Windows.Forms.PictureBox();
+            this.TargetImg = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.image1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TargetImg)).BeginInit();
             this.SuspendLayout();
             // 
             // btnUploadPhoto
@@ -59,18 +61,30 @@ namespace Photo_Cropper
             this.image1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.image1_MouseMove);
             this.image1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.image1_MouseUp);
             // 
+            // TargetImg
+            // 
+            this.TargetImg.Location = new System.Drawing.Point(145, 84);
+            this.TargetImg.Name = "TargetImg";
+            this.TargetImg.Size = new System.Drawing.Size(469, 247);
+            this.TargetImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.TargetImg.TabIndex = 2;
+            this.TargetImg.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TargetImg);
             this.Controls.Add(this.image1);
             this.Controls.Add(this.btnUploadPhoto);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.image1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TargetImg)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -78,6 +92,7 @@ namespace Photo_Cropper
 
         private System.Windows.Forms.Button btnUploadPhoto;
         private System.Windows.Forms.PictureBox image1;
+        private System.Windows.Forms.PictureBox TargetImg;
     }
 }
 

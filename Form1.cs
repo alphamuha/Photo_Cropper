@@ -26,6 +26,7 @@ namespace Photo_Cropper
         private void Form1_Load(object sender, EventArgs e)
         {
             image1.Hide();
+            TargetImg.Hide();
         }
 
         private void btnUploadPhoto_Click(object sender, EventArgs e)
@@ -90,6 +91,26 @@ namespace Photo_Cropper
                 {
                     Debug.WriteLine("Right Click");
                 }
+            }
+
+            if (Rect != null)
+            {
+                try
+                {
+                    Bitmap bit = new Bitmap(image1.Image, image1.Width, image1.Height);
+                    Bitmap cropImg = new Bitmap(Rect.Width, Rect.Height);
+                    Graphics g = Graphics.FromImage(cropImg);
+                    g.DrawImage(bit, 0, 0, Rect, GraphicsUnit.Pixel);
+                    TargetImg.Image = cropImg;
+                    image1.Hide();
+                }
+
+                catch(Exception)
+                {
+
+                }
+
+                TargetImg.Show();
             }
         }
     }
