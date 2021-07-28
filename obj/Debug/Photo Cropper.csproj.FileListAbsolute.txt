@@ -1,0 +1,10 @@
+P:\Microsoft Visual Studio\source\repos\Photo Cropper\bin\Debug\Photo Cropper.exe.config
+P:\Microsoft Visual Studio\source\repos\Photo Cropper\bin\Debug\Photo Cropper.exe
+P:\Microsoft Visual Studio\source\repos\Photo Cropper\bin\Debug\Photo Cropper.pdb
+P:\Microsoft Visual Studio\source\repos\Photo Cropper\obj\Debug\Photo Cropper.csproj.AssemblyReference.cache
+P:\Microsoft Visual Studio\source\repos\Photo Cropper\obj\Debug\Photo_Cropper.Form1.resources
+P:\Microsoft Visual Studio\source\repos\Photo Cropper\obj\Debug\Photo_Cropper.Properties.Resources.resources
+P:\Microsoft Visual Studio\source\repos\Photo Cropper\obj\Debug\Photo Cropper.csproj.GenerateResource.cache
+P:\Microsoft Visual Studio\source\repos\Photo Cropper\obj\Debug\Photo Cropper.csproj.CoreCompileInputs.cache
+P:\Microsoft Visual Studio\source\repos\Photo Cropper\obj\Debug\Photo Cropper.exe
+P:\Microsoft Visual Studio\source\repos\Photo Cropper\obj\Debug\Photo Cropper.pdb
