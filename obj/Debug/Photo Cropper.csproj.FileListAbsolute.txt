@@ -8,3 +8,13 @@ P:\Microsoft Visual Studio\source\repos\Photo Cropper\obj\Debug\Photo Cropper.cs
 P:\Microsoft Visual Studio\source\repos\Photo Cropper\obj\Debug\Photo Cropper.csproj.CoreCompileInputs.cache
 P:\Microsoft Visual Studio\source\repos\Photo Cropper\obj\Debug\Photo Cropper.exe
 P:\Microsoft Visual Studio\source\repos\Photo Cropper\obj\Debug\Photo Cropper.pdb
+C:\Users\Muhamed\Source\Repos\Photo_Cropper\bin\Debug\Photo Cropper.exe.config
+C:\Users\Muhamed\Source\Repos\Photo_Cropper\bin\Debug\Photo Cropper.exe
+C:\Users\Muhamed\Source\Repos\Photo_Cropper\bin\Debug\Photo Cropper.pdb
+C:\Users\Muhamed\Source\Repos\Photo_Cropper\obj\Debug\Photo Cropper.csproj.AssemblyReference.cache
+C:\Users\Muhamed\Source\Repos\Photo_Cropper\obj\Debug\Photo_Cropper.Form1.resources
+C:\Users\Muhamed\Source\Repos\Photo_Cropper\obj\Debug\Photo_Cropper.Properties.Resources.resources
+C:\Users\Muhamed\Source\Repos\Photo_Cropper\obj\Debug\Photo Cropper.csproj.GenerateResource.cache
+C:\Users\Muhamed\Source\Repos\Photo_Cropper\obj\Debug\Photo Cropper.csproj.CoreCompileInputs.cache
+C:\Users\Muhamed\Source\Repos\Photo_Cropper\obj\Debug\Photo Cropper.exe
+C:\Users\Muhamed\Source\Repos\Photo_Cropper\obj\Debug\Photo Cropper.pdb
