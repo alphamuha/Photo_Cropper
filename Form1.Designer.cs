@@ -93,7 +93,7 @@ namespace Photo_Cropper
             this.Controls.Add(this.image1);
             this.Controls.Add(this.btnUploadPhoto);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Photo Cropper by Muhamed Smailhodzic";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.image1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TargetImg)).EndInit();
