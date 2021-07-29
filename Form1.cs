@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,7 @@ namespace Photo_Cropper
         {
             image1.Hide();
             TargetImg.Hide();
+            btnSaveImage.Hide();
         }
 
         private void btnUploadPhoto_Click(object sender, EventArgs e)
@@ -35,7 +37,7 @@ namespace Photo_Cropper
             {
                 string imageLocation = "";
                 var dialog = new OpenFileDialog();
-                dialog.Filter = "Image files(*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
+                dialog.Filter = "Image files(*.jpg, *.jpeg, *.png) | *.jpg; *.jpeg; *.png";
 
                 if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
@@ -78,7 +80,7 @@ namespace Photo_Cropper
             {
                 if (Rect != null && Rect.Width > 0 && Rect.Height > 0)
                 {
-                    e.Graphics.FillRectangle(selectionBrush, Rect);
+                    e.Graphics.DrawRectangle(Pens.Red, Rect);
                 }
             }
         }
@@ -111,6 +113,34 @@ namespace Photo_Cropper
                 }
 
                 TargetImg.Show();
+                btnSaveImage.Show();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(TargetImg != null)
+            {
+                SaveFileDialog saveImg = new SaveFileDialog();
+                saveImg.Filter = "Image files(*.jpg, *.jpeg, *.png) | *.jpg; *.jpeg; *.png";
+
+                if(saveImg.ShowDialog() == DialogResult.OK)
+                {
+                    if (saveImg.FileName.EndsWith(".jpg"))
+                    {
+                        TargetImg.Image.Save(saveImg.FileName, ImageFormat.Jpeg);
+                    }
+
+                    else if (saveImg.FileName.EndsWith(".jpeg"))
+                    {
+                        TargetImg.Image.Save(saveImg.FileName, ImageFormat.Jpeg);
+                    }
+
+                    else if (saveImg.FileName.EndsWith(".png"))
+                    {
+                        TargetImg.Image.Save(saveImg.FileName, ImageFormat.Png);
+                    }
+                }
             }
         }
     }
