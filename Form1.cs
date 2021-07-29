@@ -111,7 +111,6 @@ namespace Photo_Cropper
                 }
 
                 TargetImg.Show();
-                //test
             }
         }
     }
